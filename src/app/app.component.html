@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row align-items-start">
+    <div class="col"></div>
+    <div class="col-8">
+      <app-home *ngIf="currentView === 1" (buttonClicked)="ChangeView(2)"></app-home>
+      <app-start *ngIf="currentView === 2" (buttonClicked)="ChangeView(2)"></app-start>
+      <app-profile *ngIf="currentView === 3" (buttonClicked)="ChangeView(2)"></app-profile>
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
